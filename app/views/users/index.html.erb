@@ -1,0 +1,9 @@
+<h1>Hi, <%= @user %>.</h1>
+
+<%= form_tag '/secrets', method: 'GET' do %>
+  <%= submit_tag 'View Secrets' %>
+<% end %>
+
+<%= form_tag '/', method: 'DELETE' do %>
+  <%= submit_tag 'Delete User' %>
+<% end %>
